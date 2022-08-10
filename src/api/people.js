@@ -19,7 +19,7 @@ export async function getCharacter(id = 1) {
 }
 
 export async function searchCharacter(name){
-    const response = await fetch(`https://swapi.dev/api/people/${name}`);
+    const response = await fetch(`https://swapi.dev/api/people/?search=${name}`);
     const data = await response.json();
     return data;
 }

@@ -45,8 +45,7 @@ function App() {
     inputSearch.current.value = "";
     setDetails({});
     searchCharacter(textSearch)
-      .then((data) => setPeople(data.results))
-      .catch(handleError);
+    .then((data) => setPeople(data.results)).catch(handleError);
   }
 
   return (
